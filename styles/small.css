@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #ddcbcb;
+    --secondary-color: #fcf8f8;
+    --text-color: #7b6666dd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    display: block;
+    margin: 0;
+    padding: 30px;
+}
+
+header {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    font-size: small;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: small;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--text-color);
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--secondary-color);
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    transition: background 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+nav a.active {
+    background-color: var(--text-color);
+    color: white;
+    font-weight: 500;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    color: var(--text-color);
+    display: block;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: white;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid #688593;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.card h2 {
+    font-size: medium;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    padding-left: 10px;
+    border-left: 6px solid var(--primary-color);
+    margin-bottom: 1.2rem;
+}
+
+.card.certificate-info {
+    text-align: center;
+}
+
+.filter-buttons {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btn {
+    flex: 1;
+    min-width: 0;
+    padding: 0.6rem 0.5rem;
+    border: 2px solid var(--text-color);
+    background-color: transparent;
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn.active, .btn:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.course-card {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+}
+
+.course-card:hover {     
+    transform: translateY(-3px);
+}
+
+.course-card.completed {
+    background-color: #7b6666;
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+.course-card.incomplete {
+    background-color: var(--secondary-color);
+    color: #7b6666;
+    border-color: var(--primary-color);
+}
+
+.credit-total {
+    font-weight: 500;
+    font-size: small;
+    color: var(--text-color);
+    margin-top: 4rem;
+    text-align: right;
+}
+
+footer {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+    margin-top: 4rem;
+    line-height: 1.6;
+}
+
+.socialmedia {
+    margin-bottom: 1rem;
+}
+
+.socialmedia a {
+    color: var(--text-color);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.socialmedia a:hover {
+    text-decoration: underline;
+}
+

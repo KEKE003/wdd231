@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: none;
+}
+
+nav a {
+    border-bottom: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.main-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.display-info {
+    grid-column: 1 / 2;
+}
+
+.local-info {
+    grid-column: 2 / 3;
+}
+
+.certificate-info {
+    grid-column: 1 / 3;
+}

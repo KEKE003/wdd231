@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Kekeletso Nhlapo | WDD 231</title>
+    <meta name="description" content="Welcome to Kekeletso Nhlapo's BYU-Idaho WDD 231 course homepage.">
+    <meta name="author" content="Kekeletso Nhlapo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Logo">
+            <span id="course-title">WDD 231 - Web Frontend Development</span>
+        </div>
+        <button id="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+        <nav id="primary-nav">
+            <a href="index.html">Home</a>
+            <a href="...">Chamber</a>
+            <a href="...">Final</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="main-grid">
+            <section class="card display-info">
+                <h2>About Me</h2>
+                <p>My name is Kekeletso Nhlapo. I live in Free State, South Africa, In a little town of Bethlehem. I am currently a student at BYU-Idaho studying Software Development through pathways. I really love what I'm studying. My love for technology started with Iron-Man (Yes, I'm serious). Seeing Tony Stark turning abstract ideas into functional, interactive reality captivated me. The creation of J.A.R.V.I.S is one of the many times he showed his mastery over software, proving that a great developer does not just build , they design. I am still learning, and I have a lot to learn but that doesn't stop me from embracing the challenge!</p>
+            </section>
+
+            <section class="card local-info">
+                <h2>Student Photo</h2>
+                <img src="images/studentphoto.jpg" alt="Student Photo">
+            </section>
+
+            <section class="card certificate-info">
+                <h2>Web Certificate Courses</h2>
+                <div class="filter-buttons">
+                    <button class="btn active" id="filter-all" type="button">All</button>
+                    <button class="btn" id="filter-cse" type="button">CSE</button>
+                    <button class="btn" id="filter-wdd" type="button">WDD</button>
+                </div>
+                <div class="course-grid" id="course-container"></div>
+                <p class="credit-total">Total Credits: <span id="total-credits"></span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/kekeletso-bt-b12aaa365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=member_desktop">
+                <img src="images/linkedin.svg" alt="" width="40" height="40"></a>
+            <a href="https://github.com/KEKE003/wdd231.git">
+                <img src="images/github.svg" alt="" width="40" height="40"></a>
+            <a href="https://www.facebook.com/kekeletso.nhlapo.568">
+                <img src="images/facebook.svg" alt="" width="40" height="40"></a>
+        </div>
+
+        <p>©<span id="currentyear"></span> |✨ Kekeletso Nhlapo ✨ | South Africa</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
+    
