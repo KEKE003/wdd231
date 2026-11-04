@@ -14,8 +14,6 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--text-color);
     background-color: var(--secondary-color);
-    display: block;
-    margin: 0;
     padding: 30px;
 }
 
@@ -86,8 +84,6 @@ main {
     margin: 0 auto;
     background-color: white;
     color: var(--text-color);
-    display: block;
-    
 }
 
 h1 {
@@ -105,7 +101,7 @@ h1 {
 .card {
     border: 1px solid #688593;
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: black;
     padding: 2rem;
     border-radius: 12px;
 }
@@ -156,7 +152,7 @@ h1 {
 }
 
 .course-card {
-    border: 1px solid transparent;
+    border: 1px solid var(--primary-color);
     border-radius: 8px;
     background-color: var(--text-color);
     color: var(--secondary-color);
@@ -174,13 +170,11 @@ h1 {
 .course-card.completed {
     background-color: #7b6666;
     color: var(--secondary-color);
-    border-color: var(--primary-color);
 }
 
 .course-card.incomplete {
     background-color: var(--secondary-color);
     color: #7b6666;
-    border-color: var(--primary-color);
 }
 
 .credit-total {
