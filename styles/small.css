@@ -78,18 +78,21 @@ nav a.active {
     font-weight: 500;
 }
 
+main,
+h1 {
+    background-color: white;
+}
+
 main {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
     color: var(--text-color);
 }
 
 h1 {
     font-size: 2rem;
     padding: 10px;
-    background-color: white;
 }
 
 .main-grid {
