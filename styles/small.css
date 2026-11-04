@@ -38,7 +38,7 @@ header {
 #menu-toggle {
     background: none;
     border: none;
-    color: var(--text-color);
+    color: black;
     font-size: small;
     cursor: pointer;
     padding: 0.5rem;
