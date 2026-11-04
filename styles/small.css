@@ -27,7 +27,7 @@ header {
     position: relative;
 }
 
-.logo-area {
+.logo {
     display: flex;
     align-items: center;
     gap: 15px;
