@@ -35,6 +35,12 @@ header {
     font-size: small;
 }
 
+.logo img {
+    width: 60px;
+    height: auto;
+    display: fit-content;
+}
+
 #menu-toggle {
     background: none;
     border: none;
@@ -192,7 +198,7 @@ footer {
     background-color: var(--text-color);
     color: var(--secondary-color);
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin-top: 4rem;
     line-height: 1.6;
 }
@@ -201,7 +207,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 1rem;
+
 }
 
 .socialmedia a {
