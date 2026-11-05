@@ -43,7 +43,7 @@ header {
 #menu-toggle {
     background: none;
     border: none;
-    color: black;
+    color: rgb(250, 240, 240);
     font-size: small;
     cursor: pointer;
     padding: 0.5rem;
