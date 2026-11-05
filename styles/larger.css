@@ -2,7 +2,7 @@
     #menu-toggle {
         display: none;
     }
-}
+
 
 nav {
     display: flex;
@@ -32,4 +32,6 @@ nav a {
 
 .certificate-info {
     grid-column: 1 / 3;
+
+}
 }
