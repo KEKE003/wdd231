@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #0c2d5e;
+    --secondary-color: #17617e;
+    --accent1-color: #e3ab43;
+    --accent2-color: #b1b6a3;
+    --text-color: #313337;
+    --bg-color: #F4F7F6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    position: relative;
+    border-bottom: 4px solid var(--accent1-color);
+}
+
+.logo-area {
+    display:  flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-area h1 {
+    font-size: 1.3rem;
+}
+
+#menu-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.primary-nav li a a.active, .primary-nav li a:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.directory-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 1rem;
+}
+
+.toggle-buttons button {
+    padding: 0.5rem 1rem;
+    border: 1x solid var(--secondary-color);
+    background-color: white;
+    cursor: pointer;
+}
+
+.toggle-buttons button.active {
+
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+h1 p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+    letter-spacing: 1px;
+}
+
+.member-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.member-card.tier-gold {
+    border-top: 5px solid var(--accent1-color);
+    box-shadow: 0 4px 15px rgba(229, 169, 59, 0.15);
+}
+
+.member-card.tier-silver {
+    border-top: 5px solid var(--accent2-color);
+}
+
+.member-card.tier-member {
+    border-top: 5px solid #cad6e5;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    font-size: small;
+    border-radius: 50px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.badge.gold {
+    background-color: #6b4a03;
+    color: white;
+}
+
+.badge.silver {
+    background-color: #495668;
+    color: white;
+}
+
+.badge.member {
+    background-color: #e2e8f0;
+    color: #303e51;
+}
+
+.member-card .url a {
+    color: var(--secondary-color);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.member-card .url a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+}
+
+.list-view .member-card img, .list-view .member-card hr, .list-view .member-card .tagline {
+    display: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}

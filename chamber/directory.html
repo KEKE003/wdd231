@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cape Town Chamber of Commerce - Directory</title>
+    <meta name="description" content="Explore and connect with premier local businesses in the Mother City. The official Cape Town Chamber Member Directory.">
+    <meta name="author" content="Kekeletso Nhlapo">
+
+    <link rel="icon" href="images/favicon.icon" type="image/x-icon">
+
+    <meta property="og:title" content="Cape Town Chamber - Business Directory">
+    <meta property="og:description" content="Supporting business growth across the Western Cape. Toggle through our list of local enterprises.">
+    <meta property="og:image" content="https://github.io">
+    <meta property="og:url" content="https://keke003.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 640px)">
+ 
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body> 
+    
+    <header>
+        <div class="logo-area">
+            <img src="images/favicon.icon" alt="Cape Town Chamber Logo" width="80" height="80">
+            <div>
+                <h1>Cape Town</h1>
+                <p>CHAMBER OF COMMERCE</p>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="directory-controls">
+            <h2>Business Directory</h2>
+            <div class="toggle-buttons">
+                <button id="grid-btn" class="active" aria-label="Grid View">Grid View ⏹️</button>
+                <button id="list-btn" aria-label="List View">List View</button>
+            </div>
+        </div>
+        <article id="directory-container" class="grid-view"></article>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Cape Town Chamber of Commerce</strong></p>
+            <p>100 Chamber Plaza, City Center</p>
+            <p>info@chamber.org | (+27)010 0000</p>
+        </div>
+        <div class="footer-dev">
+            <p>©️<span id="current-year"></span> | ✨ Kekeletso Nhlapo ✨ | WDD231</p>
+            <p>Last Modification:<span id="lastMofied"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+      

@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Table Mountain Safari Co.", 
+        "address": "12 Long Street, Cape Town City Centre, 8001",
+        "phone": "+27 (0)21 424 9981",
+        "website": "https://example.co.za",
+        "image": "safari-logo.png",
+        "membership": 3,
+        "tagline": "Unforgettable Western Cape adventures."
+    },
+    {
+        "name": "Signal Hill Tech Solutions", 
+        "address": "The Foundry, 74 Cardiff St, Green Point, 8051",
+        "phone": "+27 (0)21 555 3829",
+        "website": "https://example.co.za",
+        "image": "tech-logo.png",
+        "membership": 2,
+        "tagline": "Innovative cloud systems for African enterprise."
+    },
+    {
+        "name": "Kalk Bay Seafood Express", 
+        "address": "Harbour Road, Kalk Bay, 7975",
+        "phone": "+27 (0)21 788 1234",
+        "website": "https://example.co.za",
+        "image": "seafood-logo.png",
+        "membership": 1,
+        "tagline": "Freshly caught, sustainably sourced."
+    },
+    {
+        "name": "Bo-Kaap  Creative Agency", 
+        "address": "45 Wale St, Schotsche Kloof, 8001",
+        "phone": "+27 (0)21 465 7733",
+        "website": "https://example.co.za",
+        "image": "creative-logo.png",
+        "membership": 3,
+        "tagline": "Bringing vibrant local stories to life."
+    },
+    {
+        "name": "Constantia Valley Vineyards", 
+        "address": "Buitenverwachting Estate, Klein Constantia Rd, 7806",
+        "phone": "+27 (0)21 794 5190",
+        "website": "https://example.co.za",
+        "image": "vineyard-logo.png",
+        "membership": 3,
+        "tagline": "Legacy winemaking in the heart of the Cape."
+    },
+    {
+        "name": "Woodstock Artisanal Roastery", 
+        "address": "The Old Biscuit Mill, 375 Albert Rd, Woodstock, 7925",
+        "phone": "+27 (0)21 447 2341",
+        "website": "https://example.co.za",
+        "image": "coffee-logo.png",
+        "membership": 1,
+        "tagline": "Ethical sourcing, precision Cape Town roasting."
+    },
+    {
+        "name": "Atlantic Seaboard Properties", 
+        "address": "153 Main Road, Sea Point, 8005",
+        "phone": "+27 (0)21 439 8822",
+        "website": "https://example.co.za",
+        "image": "property-logo.png",
+        "membership": 2,
+        "tagline":"Your premier guides to luxury coastal living."
+    } 
+]
