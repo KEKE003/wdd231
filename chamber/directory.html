@@ -8,11 +8,11 @@
     <meta name="description" content="Explore and connect with premier local businesses in the Mother City. The official Cape Town Chamber Member Directory.">
     <meta name="author" content="Kekeletso Nhlapo">
 
-    <link rel="icon" href="images/favicon.icon" type="image/x-icon">
+    <link rel="icon" href="images/chamber.png" type="image/png">
 
-    <meta property="og:title" content="Cape Town Chamber - Business Directory">
-    <meta property="og:description" content="Supporting business growth across the Western Cape. Toggle through our list of local enterprises.">
-    <meta property="og:image" content="https://github.io">
+    <meta property="og:title" content="Cape Town Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore Cape Town's local businesses and connect with chamber members through an easy-to-use business directory.">
+    <meta property="og:image" content="https://keke003.github.io/wdd231/chamber/images/chamber.png">
     <meta property="og:url" content="https://keke003.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
@@ -44,11 +44,23 @@
     </header>
 
     <main>
+        <section class="weather-section" aria-labelledby="weather-heading">
+            <h2 id="weather-heading">Cape Town Weather</h2>
+            <div id="weather-container">
+                <p>Loading weather...</p>
+            </div>
+        </section>
+
+        <section class="spotlight-section" aria-labelledby="spotlight-heading">
+            <h2 id="spotlight-heading">Member Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+
         <div class="directory-controls">
             <h2>Business Directory</h2>
             <div class="toggle-buttons">
-                <button id="grid-btn" class="active" aria-label="Grid View">Grid View ⏹️</button>
-                <button id="list-btn" aria-label="List View">List View</button>
+                <button id="grid-btn" class="active" type="button" aria-label="Grid View" aria-pressed="true">Grid View</button>
+                <button id="list-btn" type="button" aria-label="List View" aria-pressed="false">List View</button>
             </div>
         </div>
         <article id="directory-container" class="grid-view"></article>

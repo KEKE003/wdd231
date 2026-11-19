@@ -197,6 +197,45 @@ main {
     display: none;
 }
 
+.weather-section,
+.spotlight-section {
+    margin-bottom: 2rem;
+}
+
+#weather-container,
+#spotlight-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.current-weather,
+.forecast p {
+    margin: 0.35rem 0;
+}
+
+.forecast {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.spotlight-card {
+    background: white;
+    border: 1px solid #dfe6e8;
+    border-left: 5px solid var(--accent1-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.spotlight-card h3,
+.spotlight-card p {
+    margin-top: 0;
+}
+
+.spotlight-card a {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;
