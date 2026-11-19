@@ -44,7 +44,29 @@ header {
     cursor: pointer;
 }
 
-.primary-nav li a a.active, .primary-nav li a:hover {
+#primary-nav {
+    display: none;
+}
+
+#primary-nav.open {
+    display: block;
+}
+
+#primary-nav ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+#primary-nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+#primary-nav li a.active,
+#primary-nav li a:hover {
     background-color: var(--accent1-color);
     color: var(--primary-color);
     font-weight: bold;
@@ -68,7 +90,7 @@ main {
 
 .toggle-buttons button {
     padding: 0.5rem 1rem;
-    border: 1x solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     background-color: white;
     cursor: pointer;
 }
@@ -85,7 +107,7 @@ main {
     gap: 1.5rem;
 }
 
-h1 p {
+.logo-area p {
     margin: 0;
     font-size: 0.9rem;
     color: var(--accent1-color);

@@ -32,13 +32,13 @@
                 <p>CHAMBER OF COMMERCE</p>
             </div>
         </div>
-        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <button id="menu-toggle" type="button" aria-label="Toggle Navigation Menu" aria-controls="primary-nav" aria-expanded="false">&#9776;</button>
         <nav id="primary-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -61,8 +61,8 @@
             <p>info@chamber.org | (+27)010 0000</p>
         </div>
         <div class="footer-dev">
-            <p>©️<span id="current-year"></span> | ✨ Kekeletso Nhlapo ✨ | WDD231</p>
-            <p>Last Modification:<span id="lastMofied"></span></p>
+            <p>&copy; <span id="current-year"></span> | Kekeletso Nhlapo | WDD231</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
 
