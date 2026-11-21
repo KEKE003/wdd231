@@ -12,7 +12,9 @@
 
     <meta property="og:title" content="Cape Town Chamber - Business Directory">
     <meta property="og:description" content="Supporting business growth across the Western Cape. Toggle through our list of local enterprises.">
-    <meta property="og:image" content="https://keke003.github.io/wdd231/chamber/images/chamber.png">
+    <meta property="og:image" content="https://keke003.github.io/wdd231/chamber/images/memberships-cape-chamber.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
     <meta property="og:url" content="https://keke003.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
@@ -54,6 +56,18 @@
                 <button id="list-btn" aria-label="List View">List View</button>
             </div>
         </div>
+
+        <section class="weather" aria-labelledby="weather-heading">
+            <h2 id="weather-heading">Cape Town Weather</h2>
+            <div id="current-weather">Loading current weather...</div>
+            <div id="weather-forecast">Loading forecast...</div>
+        </section>
+
+        <section class="spotlights" aria-labelledby="spotlights-heading">
+            <h2 id="spotlights-heading">Member Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+
         <article id="directory-container" class="grid-view"></article>
     </main>
 

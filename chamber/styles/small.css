@@ -180,6 +180,30 @@ main {
     color: var(--primary-color);
 }
 
+.weather,
+.spotlights {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: white;
+    border-left: 4px solid var(--accent1-color);
+}
+
+.weather ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#spotlight-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    border: 1px solid #dbe3e8;
+}
+
 .list-view {
     display: flex;
     flex-direction: column;
@@ -239,7 +263,8 @@ footer {
         justify-content: space-between;
     }
 
-    .grid-view {
+    .grid-view,
+    #spotlight-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
