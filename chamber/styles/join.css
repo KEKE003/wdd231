@@ -1,94 +1,3 @@
-:root {
-    --primary-color: #0c2d5e;
-    --secondary-color: #17617e;
-    --accent-color: #e3ab43;
-    --text-color: #313337;
-    --bg-color: #f4f7f6;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-color);
-    background: var(--bg-color);
-}
-
-header {
-    background: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    position: relative;
-    border-bottom: 4px solid var(--accent-color);
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo-area p {
-    margin: 0;
-}
-
-.logo-area .logo-name {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.logo-area p:last-child {
-    margin-top: 0.15rem;
-    color: var(--accent-color);
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-}
-
-#menu-toggle {
-    position: absolute;
-    top: 1.35rem;
-    right: 1rem;
-    border: 0;
-    background: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-#primary-nav {
-    display: none;
-}
-
-#primary-nav.open {
-    display: block;
-}
-
-#primary-nav ul {
-    list-style: none;
-    margin: 1rem 0 0;
-    padding: 0;
-}
-
-#primary-nav a {
-    display: block;
-    padding: 0.75rem;
-    color: white;
-    text-decoration: none;
-}
-
-#primary-nav a.active,
-#primary-nav a:hover {
-    background: var(--accent-color);
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
 .join-main {
     width: min(1200px, calc(100% - 2rem));
     margin: 0 auto;
@@ -226,18 +135,6 @@ header {
     overflow-wrap: anywhere;
 }
 
-footer {
-    background: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0.35rem 0;
-}
-
 @keyframes card-arrival {
     from {
         opacity: 0;
@@ -256,42 +153,8 @@ footer p {
 }
 
 @media (min-width: 640px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-
-    #primary-nav {
-        display: block;
-    }
-
-    #primary-nav ul {
-        display: flex;
-        gap: 1.5rem;
-        margin: 0;
-    }
-
-    #primary-nav a {
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-    }
-
     .join-layout {
         grid-template-columns: 1.35fr 0.65fr;
         align-items: start;
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        padding: 2rem;
     }
 }
