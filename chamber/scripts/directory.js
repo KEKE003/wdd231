@@ -3,11 +3,8 @@ const gridBtn = document.querySelector('#grid-btn');
 const listBtn = document.querySelector('#list-btn');
 const menuToggle = document.querySelector('#menu-toggle');
 const primaryNav = document.querySelector('#primary-nav');
-const weatherContainer = document.querySelector('#weather-container');
-const spotlightContainer = document.querySelector('#spotlight-container');
 
 const jsonPath = 'data/members.json';
-const weatherUrl = 'https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&current=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&temperature_unit=celsius&timezone=Africa%2FJohannesburg&forecast_days=3';
 
 async function getMembers() {
     try {
@@ -18,65 +15,10 @@ async function getMembers() {
 
         const data = await response.json();
         displayMembers(data);
-        displaySpotlights(data);
     } catch (error) {
         console.error('Error getting directory members:', error);
         container.innerHTML = '<p class="error">Unable to load directory at this time.</p>';
     }
-}
-
-async function getWeather() {
-    try {
-        const response = await fetch(weatherUrl);
-        if (!response.ok) {
-            throw new Error(`Weather request failed with status ${response.status}`);
-        }
-
-        const weather = await response.json();
-        displayWeather(weather);
-    } catch (error) {
-        console.error('Error getting weather:', error);
-        weatherContainer.innerHTML = '<p>Weather information is currently unavailable.</p>';
-    }
-}
-
-function displayWeather(weather) {
-    const currentTemperature = Math.round(weather.current.temperature_2m);
-    const forecast = weather.daily.time.map((date, index) => ({
-        date,
-        high: Math.round(weather.daily.temperature_2m_max[index]),
-        low: Math.round(weather.daily.temperature_2m_min[index])
-    }));
-
-    weatherContainer.innerHTML = `
-        <p class="current-weather"><strong>Current:</strong> ${currentTemperature}&deg;C</p>
-        <div class="forecast">
-            ${forecast.map(day => `
-                <p><strong>${new Date(`${day.date}T12:00:00`).toLocaleDateString('en-US', { weekday: 'short' })}</strong>: ${day.high}&deg;C / ${day.low}&deg;C</p>
-            `).join('')}
-        </div>`;
-}
-
-function displaySpotlights(members) {
-    const eligibleMembers = members.filter(member => member.membership >= 2);
-    const shuffledMembers = [...eligibleMembers];
-
-    for (let index = shuffledMembers.length - 1; index > 0; index--) {
-        const randomIndex = Math.floor(Math.random() * (index + 1));
-        [shuffledMembers[index], shuffledMembers[randomIndex]] = [shuffledMembers[randomIndex], shuffledMembers[index]];
-    }
-
-    const spotlightCount = Math.min(3, shuffledMembers.length);
-    spotlightContainer.innerHTML = shuffledMembers
-        .slice(0, spotlightCount)
-        .map(member => `
-            <section class="spotlight-card">
-                <h3>${member.name}</h3>
-                <p>${member.tagline}</p>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
-            </section>`)
-        .join('');
 }
 
 function displayMembers(members) {
@@ -135,4 +77,3 @@ document.getElementById('current-year').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
 getMembers();
-getWeather();

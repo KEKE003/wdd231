@@ -52,19 +52,6 @@ header {
     margin: 0;
 }
 
-#weather-container {
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.forecast {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#spotlight-container {
-    grid-template-columns: repeat(3, 1fr);
-}
-
 footer {
     display: flex;
     justify-content: space-between;
