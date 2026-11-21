@@ -29,8 +29,10 @@ header {
     gap: 1rem;
 }
 
-.logo-area h1 {
+.logo-area .logo-name {
+    margin: 0;
     font-size: 1.3rem;
+    font-weight: bold;
 }
 
 #menu-toggle {
@@ -107,7 +109,7 @@ main {
     gap: 1.5rem;
 }
 
-.logo-area p {
+.logo-area p:not(.logo-name) {
     margin: 0;
     font-size: 0.9rem;
     color: var(--accent1-color);
