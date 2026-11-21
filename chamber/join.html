@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Join the Chamber | Cape Town Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership to the Cape Town Chamber of Commerce.">
+    <meta name="author" content="Kekeletso Nhlapo">
+
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/chamber.png" alt="Cape Town Chamber Logo" width="80" height="80">
+            <div>
+                <p class="logo-name">Cape Town</p>
+                <p>CHAMBER OF COMMERCE</p>
+            </div>
+        </div>
+        <button id="menu-toggle" type="button" aria-label="Toggle Navigation Menu" aria-controls="primary-nav" aria-expanded="false">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+    <h1>Chamber Membership Application</h1>
+    <div class="join-layout">
+        <section class="form-section">
+            <h2>Applicant Information</h2>
+            <form method="get" action="thankyou.html" class="membership-form">
+                <label>
+                    First Name* 
+                    <input type="text" name="fname" title="Applicant's First Name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Last Name* 
+                    <input type="text" name="lname" title="Applicant's Last Name"
+                    autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title 
+                    <input type="text" name="orgtitle" title="Your title within the organization (min 7 letters, hyphens, or spaces)"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label>
+                    Email Address*
+                    <input type="email" name="email" title="Applicant's Email Address"
+                    autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+
+                <label>
+                    Mobile Phone Number* 
+                    <input type="tel" name="phone" title="Applicant's Mobile Phone Number"
+                    autocomplete="tel" required>
+                </label>
+
+                <label>
+                    Business/ Organization Name* 
+                    <input type="text" name="organization" title="Business or Organization Name"
+                    autocomplete="organization" required>
+                </label>
+
+                <label>
+                    Membership Level
+                    <select name="membership" title="Select Membership Level">
+                        <option value="" disabled selected>Select Membership Level...</option>
+                        <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Business/ Organization Description
+                    <textarea name="description" title="Describe your business or organization" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Apply for Membership" class="submit-btn">
+            </form>
+        </section>
+
+        <section class="cards-section">
+            <h2>Membership Levels</h2>
+            <div class="membership-card card-1">
+                <h3>Non-Profit Membership</h3>
+                <p>For registered non-profit organizations.</p>
+                <button type="button" class="modal-btn" data-modal="modal-np">Learn More</button>
+            </div>
+
+            <div class="membership-card card-2">
+                <h3>Bronze Membership</h3>
+                <p>Essential networking for small businesses.</p>
+                <button type="button" class="modal-btn" data-modal="modal-bronze">Learn More</button>
+            </div>
+
+            <div class="membership-card card-3">
+                <h3>Silver Membership</h3>
+                <p>Expanded visibility and event discounts.</p>
+                <button type="button" class="modal-btn" data-modal="modal-silver">Learn More</button>
+            </div>
+
+            <div class="membership-card card-4">
+                <h3>Gold Membership</h3>
+                <p>Maximum exposure and VIP access.</p>
+                <button type="button" class="modal-btn" data-modal="modal-gold">Learn More</button>
+            </div>
+        </section>
+    </div>
+
+    <dialog id="modal-np" class="membership-modal">
+        <div class="modal-content">
+            <h3>NP Membership Benefits</h3>
+            <p><strong>Cost:</strong>Free (Non-Profit Organizations Only)</p>
+            <ul>
+                <li>Directory listing on the Chamber website</li>
+                <li>Access to monthly community networking mixers</li>
+                <li>Invitation to annual non-profit summit</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-modal">
+        <div class="modal-content">
+            <h3>Bronze Membership Benefits</h3>
+            <p><strong>Cost:</strong>$250/ year</p>
+            <ul>
+                <li>All Non-Profit benefits</li>
+                <li>10% discount on Chamber training workshops</li>
+                <li>Ribbon-cutting ceremony promotion</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+        <div class="modal-content">
+            <h3>Silver Membership Benefits</h3>
+            <p><strong>Cost:</strong>$500/ year</p>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>25% discount on all Chamber events and booths</li>
+                <li>Quarterly social media spotlight feature</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+        <div class="modal-content">
+            <h3>Gold Membership Benefits</h3>
+            <p><strong>Cost:</strong>$1,000/ year</p>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Rotating spotlight ad on the Chamber Home Page</li>
+                <li>50% discount on event sponsorships and VIP seating</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </div>
+    </dialog>
+</main>
+
+<footer>
+        <div class="footer-contact">
+            <p><strong>Cape Town Chamber of Commerce</strong></p>
+            <p>100 Chamber Plaza, City Center</p>
+            <p>info@chamber.org | (+27)010 0000</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="current-year"></span> | Kekeletso Nhlapo | WDD231</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
